@@ -1,29 +1,28 @@
 {
   "expo": {
-    "name": "LugaresMorelia",
-    "slug": "LugaresMorelia",
+    "name": "Lugares Misteriosos",
+    "slug": "lugaresmorelia",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#065f46"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.utm.lugaresmorelia"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.utm.lugaresmorelia"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      ["expo-camera", {
+        "cameraPermission": "La app necesita la cámara para fotografiar lugares visitados."
+      }],
+      ["expo-location", {
+        "locationWhenInUsePermission": "La app necesita tu ubicación para guardar coordenadas."
+      }]
+    ]
   }
 }

@@ -39,3 +39,33 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Credenciales y entorno
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+firebase-config.js
+serviceAccountKey.json
+
+# Editor
+.claude/
+.vscode/
+.idea/
+Thumbs.db
+
+
+# Firebase / servicios
+google-services.json
+GoogleService-Info.plist
+firebase-config.js
+firebaseConfig.js
+serviceAccountKey.json
+*-firebase-adminsdk-*.json
+
+# Editor
+.claude/
+.vscode/
+.idea/
+Thumbs.db
